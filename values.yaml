@@ -18,8 +18,9 @@ global:
   image:
     server: docker.io
     tag: "latest"
-    pullSecrets: []
-    pullPolicy: Always
+    pullSecrets:
+      - snakeye17
+    pullPolicy: IfNotPresent
   jsonLogs: false
 
 nameOverride: ""
