@@ -51,7 +51,7 @@ node:
   loadDemo: false
   replicaCount: 1
   image:
-    repository: thingsboard/tb-node
+    repository: snakeye17/tb-node
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
@@ -97,7 +97,7 @@ jsexecutor:
   # kind can be either Deployment or StatefulSet
   kind: Deployment
   image:
-    repository: thingsboard/tb-js-executor
+    repository: snakeye17/tb-js-executor
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
@@ -121,7 +121,7 @@ mqtt:
   # kind can be either Deployment or StatefulSet
   kind: StatefulSet
   image:
-    repository: thingsboard/tb-mqtt-transport
+    repository: snakeye17/tb-mqtt-transport
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
@@ -156,7 +156,7 @@ http:
   # kind can be either Deployment or StatefulSet
   kind: StatefulSet
   image:
-    repository: thingsboard/tb-http-transport
+    repository: snakeye17/tb-http-transport
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
@@ -188,7 +188,7 @@ coap:
   # kind can be either Deployment or StatefulSet
   kind: StatefulSet
   image:
-    repository: thingsboard/tb-coap-transport
+    repository: snakeye17/tb-coap-transport
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
@@ -220,7 +220,7 @@ webui:
   # kind can be either Deployment or StatefulSet
   kind: Deployment
   image:
-    repository: thingsboard/tb-web-ui
+    repository: snakeye17/tb-web-ui
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
