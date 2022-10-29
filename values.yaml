@@ -25,20 +25,6 @@ global:
 nameOverride: ""
 fullnameOverride: ""
 
-kind: PersistentVolume
-metadata:
-  name: task-pv-volume
-  labels:
-    type: local
-spec:
-  capacity:
-    storage: 10Gi
-  accessModes:
-    - ReadWriteOnce
-  hostPath:
-    path: "/mnt/data"
-
-
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
