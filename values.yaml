@@ -278,17 +278,17 @@ postgresql-ha:
   nameOverride: pg
   postgresql:
     database: thingsboard
-    replicaCount: 1
+    replicaCount: 2
     password: Freaks100
     repmgrPassword: Freaks100
   postgresqlImage:
-    tag: latest
+    tag: 12
   pgpool:
     adminPassword: Freaks100
-    replicaCount: 1
-    useLoadBalancing: false
+    replicaCount: 2
+    useLoadBalancing: true
   pgpoolImage:
-    tag: latest
+    tag: 4
 
 redis:
   # Set architecture to either standalone or replication
