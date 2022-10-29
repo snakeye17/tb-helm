@@ -84,7 +84,7 @@ node:
     #   cpu: 100m
     #   memory: 128Mi
   autoscaling:
-    enabled: false
+    enabled: true
     minReplicas: 1
     maxReplicas: 100
     targetCPUUtilizationPercentage: 80
@@ -257,22 +257,22 @@ cassandra:
   # Database can be either postgres or hybrid (entities in postgres and timeseries in cassandra)
   # for an postgresql database set cassandra.enabled as false
   # for an hybrid database set cassandra.enabled as true
-  enabled: false
+  enabled: true
   replicaCount: 1
   dbUser:
-    password: setplease
+    password: Freaks100
 
 postgresql-ha:
   nameOverride: pg
   postgresql:
     database: thingsboard
     replicaCount: 1
-    password: setplease
-    repmgrPassword: setplease
+    password: Freaks100
+    repmgrPassword: Freaks100
   postgresqlImage:
     tag: 12
   pgpool:
-    adminPassword: setplease
+    adminPassword: Freaks100
     replicaCount: 1
     useLoadBalancing: false
   pgpoolImage:
@@ -282,7 +282,7 @@ redis:
   # Set architecture to either standalone or replication
   architecture: standalone
   auth:
-    password: setplease
+    password: Freaks100
   master:
     kind: Deployment
     persistence:
@@ -300,3 +300,4 @@ kafka:
   zookeeper:
     persistence:
       enabled: false
+
