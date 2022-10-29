@@ -55,7 +55,7 @@ node:
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
-    #tag: "X.Y.Z"
+    tag: "latest"
   imagePullSecrets:
     - name: snakeye17
   port:
@@ -86,7 +86,7 @@ node:
     #   cpu: 100m
     #   memory: 128Mi
   autoscaling:
-    enabled: true
+    enabled: false
     minReplicas: 1
     maxReplicas: 100
     targetCPUUtilizationPercentage: 80
@@ -103,7 +103,7 @@ jsexecutor:
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
-    #tag: "X.Y.Z"
+    tag: "latest"
   imagePullSecrets:
     - name: snakeye17
   replicaCount: 5
@@ -129,7 +129,7 @@ mqtt:
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
-    #tag: "X.Y.Z"
+    tag: "latest"
   imagePullSecrets:
     - name: snakeye17
   replicaCount: 1
@@ -166,7 +166,7 @@ http:
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
-    #tag: "X.Y.Z"
+    tag: "latest"
   imagePullSecrets:
     - name: snakeye17
   replicaCount: 1
@@ -200,7 +200,7 @@ coap:
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
-    #tag: "X.Y.Z"
+    tag: "latest"
   imagePullSecrets:
     - name: snakeye17
   replicaCount: 1
@@ -234,7 +234,7 @@ webui:
     # Overrides the global image values
     #server: docker.io
     #pullPolicy: Always
-    #tag: "X.Y.Z"
+    tag: "latest"
   imagePullSecrets:
     - name: snakeye17
   replicaCount: 1
