@@ -17,9 +17,9 @@
 global:
   image:
     server: docker.io
-    tag: "latest"
+    tag: "3.4.0"
     #pullSecrets: []
-    #pullPolicy: Always
+    pullPolicy: Always
   jsonLogs: false
 
 nameOverride: ""
@@ -35,7 +35,7 @@ serviceAccount:
   name: ""
 
 ingress:
-  enabled: true
+  enabled: false
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
