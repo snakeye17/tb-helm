@@ -278,14 +278,16 @@ postgresql-ha:
   nameOverride: pg
   postgresql:
     database: thingsboard
-    replicaCount: 2
+    replicaCount: 1
     password: Freaks100
     repmgrPassword: Freaks100
+    persistence:
+      enabled: false
   postgresqlImage:
     tag: 12
   pgpool:
     adminPassword: Freaks100
-    replicaCount: 2
+    replicaCount: 1
     useLoadBalancing: true
   pgpoolImage:
     tag: 4
