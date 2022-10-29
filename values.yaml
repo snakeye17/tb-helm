@@ -289,6 +289,8 @@ postgresql-ha:
     useLoadBalancing: true
   pgpoolImage:
     tag: 4
+  persistence:
+    enabled: false
 
 redis:
   # Set architecture to either standalone or replication
