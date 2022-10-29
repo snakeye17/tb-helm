@@ -15,13 +15,12 @@
 #
 
 global:
-  image:
-    server: docker.io
-    tag: "latest"
-    pullSecrets:
-      - snakeye17
-    pullPolicy: IfNotPresent
-  jsonLogs: false
+  # image:
+  #  server: docker.io
+  #  tag: "latest"
+  #  pullSecrets: []
+  #  pullPolicy: Always
+  # jsonLogs: false
 
 nameOverride: ""
 fullnameOverride: ""
@@ -57,6 +56,8 @@ node:
     #server: docker.io
     #pullPolicy: Always
     #tag: "X.Y.Z"
+  imagePullSecrets:
+    - name: snakeye17
   port:
     http: 8080
     rpc: 9090
@@ -103,6 +104,8 @@ jsexecutor:
     #server: docker.io
     #pullPolicy: Always
     #tag: "X.Y.Z"
+  imagePullSecrets:
+    - name: snakeye17
   replicaCount: 5
   podAnnotations: {}
   podSecurityContext: {}
@@ -127,6 +130,8 @@ mqtt:
     #server: docker.io
     #pullPolicy: Always
     #tag: "X.Y.Z"
+  imagePullSecrets:
+    - name: snakeye17
   replicaCount: 1
   ssl:
     enabled: false
@@ -162,6 +167,8 @@ http:
     #server: docker.io
     #pullPolicy: Always
     #tag: "X.Y.Z"
+  imagePullSecrets:
+    - name: snakeye17
   replicaCount: 1
   port:
     number: 8082
@@ -194,6 +201,8 @@ coap:
     #server: docker.io
     #pullPolicy: Always
     #tag: "X.Y.Z"
+  imagePullSecrets:
+    - name: snakeye17
   replicaCount: 1
   port:
     number: 8083
@@ -226,6 +235,8 @@ webui:
     #server: docker.io
     #pullPolicy: Always
     #tag: "X.Y.Z"
+  imagePullSecrets:
+    - name: snakeye17
   replicaCount: 1
   port:
     number: 8084
