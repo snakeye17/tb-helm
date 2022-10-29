@@ -269,7 +269,7 @@ cassandra:
   # Database can be either postgres or hybrid (entities in postgres and timeseries in cassandra)
   # for an postgresql database set cassandra.enabled as false
   # for an hybrid database set cassandra.enabled as true
-  enabled: true
+  enabled: false
   replicaCount: 1
   dbUser:
     password: Freaks100
@@ -282,13 +282,13 @@ postgresql-ha:
     password: Freaks100
     repmgrPassword: Freaks100
   postgresqlImage:
-    tag: 12
+    tag: latest
   pgpool:
     adminPassword: Freaks100
     replicaCount: 1
     useLoadBalancing: false
   pgpoolImage:
-    tag: 4
+    tag: latest
 
 redis:
   # Set architecture to either standalone or replication
